@@ -31,7 +31,8 @@
     /* Create a Parallax Effect */
     .bgimg-1,
     .bgimg-2,
-    .bgimg-3 {
+    .bgimg-3,
+    .bgimg-4 {
       background-attachment: scroll;
       background-position: 25% 43%;
       background-repeat: no-repeat;
@@ -42,14 +43,11 @@
     /* First image (Logo. Full height) */
     .bgimg-1 {
       background-image: url('/imgs/Banner.jpg');
-      min-height: 100%;
+      min-height: 60%;
+      
     }
 
-    /* Second image (Portfolio) */
-    .bgimg-2 {
-      background-image: url("/imgs/Kevin_001.jpg");
-      min-height: 600px;
-    }
+    
 
     /* Third image (Contact) */
     .bgimg-3 {
@@ -57,7 +55,13 @@
       min-height: 400px;
       background-attachment: scroll;
     }
-
+    
+    /*
+    .bgimg-4 {
+      background-image: url("/imgs/Kevin_001.jpg");
+      min-height: 400px;
+    }
+*/
     .w3-wide {
       letter-spacing: 10px;
     }
@@ -75,7 +79,7 @@
         .mobile{
           display:block;
         }
-      }
+      
   </style>
 </head>
 
@@ -91,7 +95,7 @@
       <a href="#home" class="w3-bar-item w3-button">HOME</a>
       <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
       <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PLATFORM</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT US</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT ME</a>
       <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       </a>
     </div>
@@ -107,57 +111,67 @@
   <!-- First Parallax Image with Logo Text -->
   <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
     <div class="w3-display-middle" style="white-space:nowrap;">
-      <p class="w3-center w3-black w3-padding-large w3-wide w3-xlarge">KEVIN<br>FOR VP ADMIN</p>
+      <p class="w3-center w3-black w3-padding-large w3-wide w3-xlarge">KEV HEIEIS<br>FOR AMS VP ADMIN</p> <!--find way to lower text box-->
+      <div class="bgimg-4"></div>
     </div>
   </div>
 
-  <!-- Container (About Section) -->
+  <!-- Container (Mission Statement) -->
   <div class="w3-content w3-container w3-padding-64" id="about">
-    <h3 class="w3-center">ABOUT</h3>
-    <p>About Kevin...</p>
+    <p class="w3-center"><b><i></i>Mission Statment:</b></p>
+    
+    <p class="w3-center"> <i> The AMS needs to be more than just a business; it must champion student support. I believe that initiatives to aid student clubs, program councils, and individuals facing challenges must be prioritized</i></p> </li>
+  
+    <br>
+    <p class="w3-center"><b><i></i>VP Admin Responsibilities:</b></p>
+    <ul>
+        <li><p>Manage club engagements, including activity clubs and program councils</p></li>
+        <li><p>Direct and maintain AMS sustainability initiatives </p></li>
+        <li><p>Govern NEST businesses </p></li>
+        <li><p>Oversee the NEST Art Gallery </p></li>
+    </ul>
 
     <br>
 
+    
+
+  
+
+    <!-- Goals -->
     <div class="w3-row">
       <div class="w3-col m6 w3-center w3-padding-large">
-        <img src="/imgs/Kevin_003.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+        <img src="/imgs/Kevin_003.jpg" class="w3-round w3-image" alt="Photo of Me" width="400" height="333" style="width: 370px; height: 300px; object-fit: cover; object-position: 60% 0;">
       </div>
 
       <!-- Hide this text on small devices -->
       <div class="w3-col m6 w3-padding-large">
-        <p class="w3-center"><b><i class="fa fa-user w3-margin-right"></i>KEVIN HEIEIS</b></p>
+        <p class="w3-center"><b><i></i>Biography:</b></p>
         <p>
           "Kevin Bio"
         </p>
       </div>
     </div>
 
-    <!-- Second Parallax Image with Portfolio Text -->
-    <br>
-    <hr style="color:lightgray;border-width:1px;border-style:solid;">
-    <br>
-    <div class="bgimg-2 w3-display-container w3-opacity-min w3-round">
-      <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">PLATFORM</span>
-      </div>
-    </div>
+   
 
     <!-- Container (Portfolio Section) -->
     <div class="w3-content w3-container w3-padding-64" style="padding-bottom: 0px !important" id="portfolio">
-      <h3 class="w3-center">Our Platform</h3>
-      <p class="w3-center">
-        Paragraph 1
+      <h3 class="w3-center">Platform</h3>
+      <p class="left">
+        1
       </p><br>
-      <p class="w3-center">
-        Paragaprh 2
+      <p class="left">
+        2
       </p><br>
-      <p class="w3-center">
-        Paragraph 3
+      <p class="left">
+        3
       </p><br>
-      <p class="w3-center">
-        Paragraph 4
+      <p class="left">
+        4
       </p><br>
     </div>
+
+    
 
     <!-- Modal for full size images on click-->
     <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -170,32 +184,23 @@
     </div>
 
     <hr style="color:lightgray;border-width:1px;border-style:solid;">
-    <br>
+    
 
-    <!-- Third Parallax Image with Portfolio Text -->
-    <div class="bgimg-3 w3-display-container w3-opacity-min w3-round">
-      <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-      </div>
-    </div>
+    
 
     <!-- Container (Contact Section) -->
     <div class="w3-content w3-container w3-padding-64" id="contact">
-      <h3 class="w3-center">Get in Touch!</h3>
-      <p class="w3-center"><em>i would love to hear your feedback!</em></p>
+      <h3 class="w3-center"> Share Your Vision  </h3>
+      
       <p>
-        "CHANGE THIS"
-        We want to host events that are fun and engaging for all students! Let us know what sorts of events you
-        would like to see us host, and we will do our best to make them happen.
+        <i><h5 class="w3-center"> As VP Admin, I will actively listen to new ideas. This starts with you letting me know how I can help: </h5> </i>
       </p>
-      <p>
-        Furthermore if you have any comments, questions, or concerns about the platform, feel free to reach out.
-        I will be available in the Nest throughout the week. I look forward to hearing from you all :)
+      
       </p>
 
       <div class="w3-row w3-padding-32 w3-section mobile">
         <div class="w3-col m4 w3-container">
-          <img src="/imgs/Banner.jpg" class="w3-image w3-round" style="width:100%">
+          <img src="/imgs/Kevin_002.jpg" class="w3-image w3-round" style="width:100%">
         </div>
         <div class="w3-col m8 w3-panel" style="margin: auto;">
           <div class="w3-large w3-margin-bottom">
@@ -204,7 +209,7 @@
               href="mailto:kev.heieis@gmail.com"
               target="_blank">kev.heieis@gmail.com</a><br></span>
               <span style="vertical-align:middle;"><i
-                class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Insta: <a
+                class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Instagram: <a
                 href="https://www.instagram.com/kevdog.ca/"
                 target="_blank">@kevdog.ca</a><br></span>
                 <!-- <span style="vertical-align:middle;"><i
